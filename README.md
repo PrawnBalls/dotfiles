@@ -18,9 +18,17 @@ This repository contains my personal configuration files for various tools and e
 
 To use these dotfiles: Please start with HyDE's Dotfiles https://github.com/HyDE-Project/HyDE
 
-### 1. Manual Install the repository:
+## 🛠️ Manual Install
 
+If you want to manually install these dotfiles:
+
+```bash
+# Clone the repository
 git clone https://github.com/PrawnBalls/dotfiles.git ~/dotfiles
+
+# Move into the dotfiles directory
 cd ~/dotfiles
+
+# Run the installer
 chmod +x install.sh
 ./install.sh
