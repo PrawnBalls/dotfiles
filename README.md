@@ -1,3 +1,10 @@
+## Screenshots
+
+### Hyprland Desktop
+
+![Hyprland](screenshots/Desktop.png)
+![Hyprland](screenshots/Desktop.png)
+
 # Dotfiles
 
 This repository contains my personal configuration files for various tools and environments, including:
