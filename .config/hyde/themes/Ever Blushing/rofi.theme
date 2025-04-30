@@ -1,0 +1,12 @@
+$HOME/.config/rofi/theme.rasi
+* {
+    main-bg:            #141b1e;    /* Background color (Everblush Background) */
+    main-fg:            #dadada;    /* Main text color (Everblush White - Foreground) */
+    main-br:            #232a2d;    /* Main border color (Everblush Lighter Background) */
+    main-ex:            #67b0e8;    /* Accent color (Everblush Blue) */
+    select-bg:          #6cbfbf;    /* Selection background (Everblush Lighter Background) */
+    select-fg:          #141b1e;    /* Selection text color (Everblush White - Foreground) */
+    separatorcolor:     transparent;
+    border-color:       transparent;
+}
+

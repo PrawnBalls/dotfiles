@@ -1,0 +1,61 @@
+$HOME/.config/hypr/themes/theme.conf|> $HOME/.config/hypr/themes/colors.conf
+
+$GTK_THEME=WhiteSur-Dark
+$ICON_THEME=WhiteSur
+$COLOR_SCHEME=prefer-dark
+$CURSOR_THEME=macOS-Black
+$CURSOR_SIZE=26                                
+$FONT=SF Pro Rounded Regular 10.5
+$CODE_THEME=MacOS Modern Dark - Xcode Modern
+
+exec = gsettings set org.gnome.desktop.interface icon-theme '$ICON_THEME'
+exec = gsettings set org.gnome.desktop.interface gtk-theme '$GTK_THEME'
+exec = gsettings set org.gnome.desktop.interface color-scheme '$COLOR_SCHEME'
+exec = gsettings set org.gnome.desktop.interface font-name '$FONT'
+exec = Hyde cursor theme '$CURSOR_THEME' size $CURSOR_SIZE
+exec = Hyde code theme '$CODE_THEME'
+
+general {
+    gaps_in = 4
+    gaps_out = 10
+    border_size = 2
+    col.active_border = rgba(0D9AC1FF) rgba(0B4C5DFF) 45deg
+    col.inactive_border = rgba(4A3B4ACC) rgba(1A2B3DCC) 45deg
+    layout = dwindle
+    resize_on_border = true
+}
+
+group {
+    col.border_active = rgba(0D9AC1FF) rgba(0B4C5DFF) 45deg
+    col.border_inactive = rgba(4A3B4ACC) rgba(1A2B3DCC) 45deg
+    col.border_locked_active = rgba(0D9AC1FF) rgba(0B4C5DFF) 45deg
+    col.border_locked_inactive = rgba(4A3B4ACC) rgba(1A2B3DCC) 45deg
+}
+
+decoration {
+    rounding = 10
+    active_opacity = 0.9
+    inactive_opacity = 0.9
+
+    blur {
+        enabled = yes
+        size = 4
+        passes = 4
+        noise = 0.02
+        new_optimizations = on
+        ignore_opacity = on
+        xray = false
+    }
+
+    shadow {
+        enabled = false
+        ignore_window = true
+        offset = 0 0
+        range = 15
+        render_power = 1
+        color = 0x80ffffff
+    }
+}
+
+
+blurls = waybar

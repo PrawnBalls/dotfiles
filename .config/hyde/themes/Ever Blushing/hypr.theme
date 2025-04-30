@@ -1,0 +1,70 @@
+$HOME/.config/hypr/themes/theme.conf|> $HOME/.config/hypr/themes/colors.conf
+
+$GTK_THEME = Ever-Blush
+$ICON_THEME = Papirus-Everblush
+$COLOR_SCHEME=prefer-dark                    
+$CODE_THEME=Everblush
+
+exec = gsettings set org.gnome.desktop.interface icon-theme '$ICON_THEME'
+exec = gsettings set org.gnome.desktop.interface gtk-theme '$GTK_THEME'
+exec = gsettings set org.gnome.desktop.interface color-scheme '$COLOR_SCHEME'
+exec = Hyde code theme '$CODE_THEME'
+
+general {
+    border_size = 3
+    col.inactive_border = rgba(232a2dff) 
+    col.active_border = rgba(67b0e8ff) 
+    resize_on_border = yes
+    gaps_in = 5
+    gaps_out = 10
+}
+
+decoration {
+    
+
+    active_opacity = 0.95
+    inactive_opacity = 0.95
+
+    blur {
+        enabled = yes
+        size = 5
+        passes = 4
+        ignore_opacity = true
+        new_optimizations = true
+        xray = false
+        noise = 0.0
+        popups = true
+    }
+
+    dim_inactive = false
+    dim_strength = 0.05
+
+    shadow {
+        enabled = false
+    }
+}
+
+group {
+    col.border_inactive = rgba(232a2dff) 
+    col.border_active = rgba(67b0e8ff) 
+
+    groupbar {
+      col.active = rgba(7fbbb3cc) 
+      col.inactive = rgba(282c34ff)
+      font_family = CaskaydiaCove Nerd Font Mono
+      font_size = 10
+      text_color = rgba(d9e0eeff) 
+    }
+}
+
+#Setting the opacity for all apps to 1 as this theme is supposed to be a dark minimal theme with no blur etc
+#Comment the below line to enable blur
+
+windowrulev2 = opacity 1 override 1 override 1 override,class:^(.*)$
+
+layerrule = blur, waybar
+layerrule = ignorezero, waybar
+
+
+
+

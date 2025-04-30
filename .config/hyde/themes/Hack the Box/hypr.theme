@@ -1,0 +1,59 @@
+$HOME/.config/hypr/themes/theme.conf|> $HOME/.config/hypr/themes/colors.conf
+#  ___________      _________                        __
+#  \__    ___/      \_   ___ \_______ ___.__._______/  |_
+#   |    |  ______ /    \  \/\_  __ <   |  |\____ \   __\
+#   |    | /_____/ \     \____|  | \/\___  ||  |_> >  |
+#   |____|          \______  /|__|   / ____||   __/|__|
+#                          \/        \/     |__|
+
+$ICON_THEME=Papirus
+$GTK_THEME=Hackthebox
+$COLOR_SCHEME=prefer-dark
+$CURSOR_THEME=HackCursor
+$CURSOR_SIZE=20
+
+#? For anyone using the old implementaiton of hyprdots
+#? You can use the following commands to set the themes
+#? This is not needed for the new implementation as this makes it slower
+
+exec = gsettings set org.gnome.desktop.interface icon-theme '$ICON_THEME'
+exec = gsettings set org.gnome.desktop.interface gtk-theme '$GTK_THEME'
+exec = gsettings set org.gnome.desktop.interface color-scheme '$COLOR_SCHEME'
+#
+exec = gsettings set org.gnome.desktop.interface cursor-theme '$CURSOR_THEME'
+exec = gsettings set org.gnome.desktop.interface cursor-size $CURSOR_SIZE
+exec = hyprctl setcursor $CURSOR_THEME $CURSOR_SIZE
+
+general {
+    gaps_in = 8
+    gaps_out = 14
+    border_size = 4
+    col.active_border = rgba(c5f467ca) rgba(1a2332ca) 45deg
+    col.inactive_border = rgba(87b0f9cc) rgba(1a2332cc) 45deg
+    layout = dwindle
+    resize_on_border = true
+}
+
+group {
+    col.border_active = rgba(c5f467ca) rgba(1a2332ca) 45deg
+    col.border_inactive = rgba(87b0f9cc) rgba(1a2332cc) 45deg
+    col.border_locked_active = rgba(c5f467ca) rgba(1a2332ca) 45deg
+    col.border_locked_inactive = rgba(87b0f9cc) rgba(1a2332cc) 45deg
+}
+
+decoration {
+    rounding = 3
+    blur {
+        enabled = yes
+        size = 4
+        passes = 2
+        new_optimizations = on
+        ignore_opacity = on
+        xray = false
+    }
+    shadow {
+    enabled = false
+    }
+}
+
+blurls = waybar

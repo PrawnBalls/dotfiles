@@ -1,0 +1,60 @@
+$HOME/.config/hypr/themes/theme.conf|> $HOME/.config/hypr/themes/colors.conf
+
+# $SDDM_THEME = Monokai
+$GTK_THEME = Monokai
+$ICON_THEME = Monokai
+$COLOR_SCHEME=prefer-dark
+
+exec = gsettings set org.gnome.desktop.interface icon-theme '$ICON_THEME'
+exec = gsettings set org.gnome.desktop.interface gtk-theme '$GTK_THEME'
+exec = gsettings set org.gnome.desktop.interface color-scheme '$COLOR_SCHEME'
+
+# // Set the sddm theme here
+# exec = Hyde sddm set $SDDM_THEME
+
+
+general {
+    gaps_in = 3
+    gaps_out = 8
+    border_size = 2
+    col.active_border = rgba(ca9ee6ff) rgba(f2d5cfff) 45deg
+    col.inactive_border = rgba(b4befecc) rgba(6c7086cc) 45deg
+    layout = dwindle
+    resize_on_border = true
+}
+
+group {
+    col.border_active = rgba(ca9ee6ff) rgba(f2d5cfff) 45deg
+    col.border_inactive = rgba(b4befecc) rgba(6c7086cc) 45deg
+    col.border_locked_active = rgba(ca9ee6ff) rgba(f2d5cfff) 45deg
+    col.border_locked_inactive = rgba(b4befecc) rgba(6c7086cc) 45deg
+}
+
+decoration {
+    rounding = 10
+
+    blur {
+        enabled = true
+        size = 4
+        passes = 3
+        new_optimizations = on
+        ignore_opacity = true
+        xray = false
+        brightness = 1
+        noise=0.04
+    }
+    shadow {
+        enabled = false
+    }
+    
+}
+
+#windowrule=opacity 1 override 1 override,title:(.*)
+windowrulev2 = opacity 0.80 0.70,class:^(pavucontrol)$
+windowrulev2 = opacity 0.80 0.70,class:^(blueman-manager)$
+windowrulev2 = opacity 0.80 0.70,class:^(nm-applet)$
+windowrulev2 = opacity 0.80 0.70,class:^(nm-connection-editor)$
+windowrulev2 = opacity 0.70 0.70,class:^(kitty)$
+windowrulev2 = opacity 0.80 0.70,class:^(dev.warp.Warp)$
+layerrule = blur,waybar 
+layerrule = blur,rofi 

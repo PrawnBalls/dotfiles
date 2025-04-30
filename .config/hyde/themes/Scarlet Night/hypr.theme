@@ -1,0 +1,45 @@
+$HOME/.config/hypr/themes/theme.conf|> $HOME/.config/hypr/themes/colors.conf
+
+$GTK-THEME = Rose-Pine
+$ICON-THEME = Tela-circle-hotred
+
+exec = gsettings set org.gnome.desktop.interface icon-theme '$ICON-THEME'
+exec = gsettings set org.gnome.desktop.interface gtk-theme '$GTK-THEME'
+exec = gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+
+#Set the sddm theme here
+#exec = Hyde sddm set $SDDM-THEME
+
+general {
+    gaps_in = 3
+    gaps_out = 8
+    border_size = 2
+    col.active_border = rgba(ff0000ff) rgba(1A1A1Aff) 45deg
+    col.inactive_border = rgba(0A0A0Aff) rgba(1A1A1Aff) 45deg
+    layout = dwindle
+    resize_on_border = true
+}
+
+group {
+    col.border_active = rgba(dd0000ff) rgba(1A1A1Aff) 45deg
+    col.border_inactive = rgba(0A0A0Aff) rgba(1A1A1Acc) 45deg
+    col.border_locked_active = rgba(ff0000ff) rgba(ff0000ff) 45deg
+    col.border_locked_inactive = rgba(ff0000cc) rgba(ff0000cc) 45deg
+}
+
+decoration {
+    rounding = 10
+    blur {
+        enabled = yes
+        size = 3
+        passes = 4
+        new_optimizations = on
+        ignore_opacity = on
+        xray = false
+    }
+    shadow {
+        enabled = false
+    }
+}
+
+layerrule = blur,waybar 

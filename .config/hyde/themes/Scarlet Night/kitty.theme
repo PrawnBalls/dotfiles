@@ -1,0 +1,47 @@
+$HOME/.config/kitty/theme.conf|killall -SIGUSR1 kitty
+
+foreground              #FFFFFF
+background              #0A0A0A
+
+selection_foreground    #0A0A0A
+selection_background    #FF0000
+
+url_color               #73daca
+cursor                  #FF4444 
+cursor_text_color       #FFFFFF
+
+active_tab_foreground   #0A0A0A
+active_tab_background   #FF0000
+
+inactive_tab_foreground #4A4A4A
+inactive_tab_background #0A0A0A
+
+
+# Deep black for the background tones
+# Dark gray for muted elements
+
+color0      #1A1A1A      
+color8      #4A4A4A      
+
+# Typing color - bright red
+color1      #DD0000
+color9      #DD0000
+
+# Confirmed typing - deeper red
+color2      #FF9999
+color10     #FF9999
+
+color3      #FF6666
+color11     #FF6666
+
+color4      #FF0000
+color12     #FF0000
+
+color5      #FF4444
+color13     #FF4444
+
+color6      #FF5555
+color14     #FF5555
+
+color7      #32CD32
+color15     #32CD32

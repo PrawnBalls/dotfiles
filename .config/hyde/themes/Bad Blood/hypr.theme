@@ -1,0 +1,65 @@
+$HOME/.config/hypr/themes/theme.conf|> $HOME/.config/hypr/themes/colors.conf
+# ~/.config/hypr/theme/theme.conf is an auto-generated file. Do not edit.
+
+$GTK_THEME=Bad-Blood
+$ICON_THEME=besgnulinux-mono-red
+$COLOR_SCHEME=prefer-dark
+$CURSOR_THEME=Night-Diamond-Red
+
+
+#? For anyone using the old implementaiton of hyprdots
+#? You can use the following commands to set the following
+#? This is not needed for the new implementation as this makes it slower
+
+exec = gsettings set org.gnome.desktop.interface icon-theme '$ICON_THEME'
+exec = gsettings set org.gnome.desktop.interface gtk-theme '$GTK_THEME'
+exec = gsettings set org.gnome.desktop.interface color-scheme '$COLOR_SCHEME'
+
+exec = gsettings set org.gnome.desktop.interface cursor-theme '$CURSOR_THEME'
+exec = gsettings set org.gnome.desktop.interface cursor-size $CURSOR_SIZE
+exec = hyprctl setcursor $CURSOR_THEME $CURSOR_SIZE
+
+
+general {
+    gaps_in = 2
+    gaps_out = 5
+    border_size = 2
+    col.active_border = rgba(EA0000ff) rgba(522929ff) 45deg
+    col.inactive_border = rgba(040000ff) rgba(2E0404ff) 45deg
+    layout = dwindle
+    resize_on_border = true
+}
+
+group {
+    col.border_active = rgba(EA0000ff) rgba(522929ff) 45deg
+    col.border_inactive = rgba(040000cc) rgba(2E0404cc) 45deg
+    col.border_locked_active = rgba(FFFFFFff) rgba(FFFFFFff) 45deg
+    col.border_locked_inactive = rgba(FFFFFFcc) rgba(FFFFFFcc) 45deg
+}
+
+decoration {
+    rounding = 0
+    active_opacity = 0.95
+    inactive_opacity = 0.90
+
+    shadow {
+    enabled = true
+    ignore_window = true
+    render_power = 2
+    color = 0x80ffffff
+    range = 14
+    offset = 0 0
+    }
+
+    blur {
+        enabled = yes
+        size = 4
+        passes = 4
+        new_optimizations = on
+        ignore_opacity = on
+        xray = false
+    }
+}
+
+layerrule = blur,waybar
+layerrule = blurpopups,waybar

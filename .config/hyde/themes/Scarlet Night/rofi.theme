@@ -1,0 +1,11 @@
+$HOME/.config/rofi/theme.rasi
+* {
+    main-bg:            #0A0A0A;    /* Deep black background */
+    main-fg:            #FF0000;    /* True Ferrari red text color */
+    main-br:            #1A1A1A;    /* Dark black border color */
+    main-ex:            #FF0000;    /* Ferrari red accent color */
+    select-bg:          #1A1A1A;    /* Dark black selection background */
+    select-fg:          #FF0000;    /* True Ferrari red selection text color */
+    separatorcolor:     transparent;
+    border-color:       transparent;
+}

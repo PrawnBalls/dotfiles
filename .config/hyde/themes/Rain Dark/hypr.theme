@@ -1,0 +1,50 @@
+$HOME/.config/hypr/themes/theme.conf|> $HOME/.config/hypr/themes/colors.conf
+
+$GTK_THEME = Rain-Dark
+$ICON_THEME = Rain-Dark
+$COLOR_SCHEME=prefer-dark
+$CURSOR_THEME = Capitaine-Cursors-Tokyonight
+$CURSOR_SIZE=20
+$CODE_THEME=Tokyo Night Storm
+
+exec = gsettings set org.gnome.desktop.interface icon-theme '$ICON_THEME'
+exec = gsettings set org.gnome.desktop.interface gtk-theme '$GTK_THEME'
+exec = gsettings set org.gnome.desktop.interface color-scheme '$COLOR_SCHEME'
+exec = Hyde cursor theme '$CURSOR_THEME' size $CURSOR_SIZE
+exec = Hyde code theme '$CODE_THEME'
+
+general {
+    gaps_in = 3
+    gaps_out = 8
+    border_size = 2
+    col.active_border = rgba(6337ccff) rgba(6337ccff) 45deg
+    col.inactive_border = rgba(090219ff) rgba(090219ff) 45deg
+    layout = dwindle
+    resize_on_border = true
+}
+
+group {
+    col.border_active = rgba(090219ff) rgba(c912a8ff) 45deg
+    col.border_inactive = rgba(565f89cc) rgba(9aa5cecc) 45deg
+    col.border_locked_active = rgba(bb9af7ff) rgba(b4f9f8ff) 45deg
+    col.border_locked_inactive = rgba(565f89cc) rgba(9aa5cecc) 45deg
+}
+
+decoration {
+    rounding = 10
+
+    blur {
+        enabled = yes
+        size = 6
+        passes = 3
+        new_optimizations = on
+        ignore_opacity = on
+        xray = false
+    }
+
+    shadow {
+        enabled = false
+    }
+}
+
+layerrule = blur,waybar

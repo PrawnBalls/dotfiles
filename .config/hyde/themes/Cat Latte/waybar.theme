@@ -1,0 +1,14 @@
+$HOME/.config/waybar/theme.css|${scrDir}/wbarconfgen.sh
+@define-color bar-bg rgba(0, 0, 0, 0); /* Transparent background */
+
+/* Main colors */
+@define-color main-bg #eff1f5; /* Latte base */
+@define-color main-fg #4c4f69; /* Latte text color */
+
+/* Active workspace colors */
+@define-color wb-act-bg #dd7878; /* Flamingo for active workspace background */
+@define-color wb-act-fg #eff1f5; /* Light foreground for active workspace text/icon */
+
+/* Hover colors with Flamingo/Rosewater accents */
+@define-color wb-hvr-bg #dc8a78; /* Rosewater accent */
+@define-color wb-hvr-fg #eff1f5; /* Light text color on hover */

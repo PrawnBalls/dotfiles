@@ -1,0 +1,71 @@
+$HOME/.config/hypr/themes/theme.conf|> $HOME/.config/hypr/themes/colors.conf
+
+$GTK_THEME=Eternal-Arctic
+$ICON_THEME=Papirus-Nordic
+$CURSOR_THEME=Capitaine-Cursors-Nord
+$COLOR_SCHEME=prefer-dark
+$CURSOR_SIZE=20
+$CODE_THEME=Nord
+
+exec = gsettings set org.gnome.desktop.interface icon-theme '$ICON_THEME'
+exec = gsettings set org.gnome.desktop.interface gtk-theme '$GTK_THEME'
+exec = gsettings set org.gnome.desktop.interface color-scheme '$COLOR_SCHEME'
+exec = Hyde cursor theme '$CURSOR_THEME' size $CURSOR_SIZE
+exec = Hyde code theme '$CODE_THEME'
+
+general {
+    border_size = 3
+    col.inactive_border = rgba(434c5ebb) # Nord Polar Night (no. 1) with reduced opacity
+    col.active_border = rgba(d8dee9ee) rgba(88c0d0cc) rgba(88c0d0cc) rgba(d8dee9ee) 45deg # Nord Snow Storm and Frost
+    resize_on_border = yes
+    gaps_in = 5
+    gaps_out = 10
+}
+
+decoration {
+    
+
+    active_opacity = 0.95
+    inactive_opacity = 0.95
+
+    blur {
+        enabled = yes
+        size = 5
+        passes = 4
+        ignore_opacity = true
+        new_optimizations = true
+        xray = false
+        noise = 0.0
+        popups = true
+    }
+
+    dim_inactive = false
+    dim_strength = 0.05
+
+    shadow {
+        enabled = true
+        range = 30
+        scale = 2
+        render_power = 5
+        color = rgba(3b4252ff) # Nord Polar Night (no. 2)
+        color_inactive = rgba(2e3440ff) # Nord Polar Night (no. 1)
+    }
+}
+
+group {
+    col.border_inactive = rgba(434c5ebb) # Nord Polar Night (no. 1)
+    col.border_active = rgba(d8dee9ee) rgba(88c0d0cc) rgba(88c0d0cc) rgba(d8dee9ee) 45deg # Nord Snow Storm and Frost
+
+    groupbar {
+      col.active = rgba(88c0d0cc) # Nord Frost (no. 2) with opacity
+      col.inactive = rgba(4c566aff) # Nord Polar Night (no. 3)
+      font_family = JetBrainsMono NFM
+      font_size = 10
+      text_color = rgba(d8dee9ff) # Nord Snow Storm (no. 1)
+    }
+}
+
+
+blurls = waybar
+
+

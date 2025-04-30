@@ -1,0 +1,57 @@
+$HOME/.config/kitty/theme.conf|killall -SIGUSR1 kitty
+
+#Vanta Black by rishav12s
+
+foreground              #FFFFFF
+background              #000000
+selection_foreground    #000000
+selection_background    #FFFFFF
+
+cursor                  #FFFFFF
+cursor_text_color       #000000
+
+url_color               #FFFFFF
+
+active_border_color     #FFFFFF
+inactive_border_color   #333333
+bell_border_color       #FFFFFF
+
+wayland_titlebar_color  system
+macos_titlebar_color    system
+
+active_tab_foreground   #FFFFFF
+active_tab_background   #000000
+inactive_tab_foreground #FFFFFF
+inactive_tab_background #000000
+tab_bar_background      #FFFFFF
+
+mark1_foreground        #000000
+mark1_background        #FFFFFF
+mark2_foreground        #000000
+mark2_background        #FFFFFF
+mark3_foreground        #000000
+mark3_background        #FFFFFF
+
+color0  #000000
+color8  #333333
+
+color1  #FFFFFF
+color9  #FFFFFF
+
+color2  #FFFFFF
+color10 #FFFFFF
+
+color3  #FFFFFF
+color11 #FFFFFF
+
+color4  #FFFFFF
+color12 #FFFFFF
+
+color5  #FFFFFF
+color13 #FFFFFF
+
+color6  #FFFFFF
+color14 #FFFFFF
+
+color7  #FFFFFF
+color15 #FFFFFF

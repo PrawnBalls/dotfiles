@@ -1,0 +1,40 @@
+$HOME/.config/hypr/themes/theme.conf|> $HOME/.config/hypr/themes/colors.conf
+
+$GTK_THEME=Kripton
+$ICON_THEME=Vivid-Glassy-Dark-Icons
+$CURSOR_THEME=Sweet-cursors
+$COLOR_SCHEME=prefer-dark
+$CURSOR_SIZE=20
+
+exec = gsettings set org.gnome.desktop.interface icon-theme '$ICON_THEME'
+exec = gsettings set org.gnome.desktop.interface gtk-theme '$GTK_THEME'
+exec = gsettings set org.gnome.desktop.interface color-scheme '$COLOR_SCHEME'
+exec = Hyde cursor theme '$CURSOR_THEME' size $CURSOR_SIZE
+
+general {
+    gaps_in = 6
+    gaps_out = 12
+    border_size = 3
+    col.active_border = rgba(78c6ebff) rgba(8289a3ff) 45deg
+    col.inactive_border = rgba(7, 15, 42, 0.58)
+    layout = dwindle
+    resize_on_border = true
+}
+
+decoration {
+    rounding = 2
+    drop_shadow = false
+
+    blur {
+        enabled = yes
+        size = 4
+        passes = 2
+        new_optimizations = on
+        ignore_opacity = on
+        xray = false
+    }
+}
+
+blurls = waybar
+
+

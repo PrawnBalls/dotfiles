@@ -1,0 +1,41 @@
+$HOME/.config/waybar/theme.css|${scrDir}/wbarconfgen.sh
+@define-color bar-bg rgba(0, 0, 0, 0);
+
+@define-color main-bg #2C2525;
+@define-color main-fg #F38BA8; 
+
+@define-color wb-act-bg #F92672; 
+@define-color wb-act-fg #F8F8F2; 
+
+@define-color wb-hvr-bg #F5C2E7; 
+@define-color wb-hvr-fg #F8F8F2;
+
+@define-color highlight-bg #87B0F9; 
+@define-color highlight-fg #F8F8F2; 
+
+@define-color warning-bg #F38BA8;
+@define-color warning-fg #272822; 
+
+@define-color success-bg #A6E3A1; 
+@define-color success-fg #272822; 
+
+@define-color error-bg #F38BA8; 
+@define-color error-fg #272822; 
+
+@define-color info-bg #66D9EF; 
+@define-color info-fg #F8F8F2; 
+
+@define-color neutral-bg #49483E; 
+@define-color neutral-fg #A6E22E; 
+
+@define-color secondary-bg #75715E; 
+@define-color secondary-fg #F8F8F2; 
+
+@define-color accent-bg #AE81FF; 
+@define-color accent-fg #F8F8F2;
+
+
+
+
+
+

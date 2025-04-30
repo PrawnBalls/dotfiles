@@ -1,0 +1,31 @@
+$HOME/.config/kitty/theme.conf|killall -SIGUSR1 kitty
+# Kitty configuration file for BlueSky theme
+
+foreground              #FFFFFF
+background              #122D41
+selection_foreground    #122D41
+selection_background    #FFFFFF
+cursor                  #D3DCE6 
+cursor_text_color       #060605
+
+active_tab_foreground     #122D41
+active_tab_background     #7F9FC2
+inactive_tab_foreground   #7F9FC2
+inactive_tab_background   #122D41
+
+color0      #294052
+color1      #CCE4FF
+color2      #CCE5FF
+color3      #CCE4FF
+color4      #9AC5E6
+color5      #9ABEE6
+color6      #9ABEE6
+color7      #CCE4FF
+color8      #57778F
+color9      #AACBF0
+color10     #AACCF0
+color11     #AACBF0
+color12     #9AC5E6
+color13     #9ABEE6
+color14     #9ABEE6
+color15     #AACBF0

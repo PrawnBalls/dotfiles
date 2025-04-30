@@ -1,0 +1,63 @@
+$HOME/.config/hypr/themes/theme.conf|> $HOME/.config/hypr/themes/colors.conf
+
+$SDDM_THEME=MacOS
+$GTK_THEME = MacOS
+$ICON_THEME =MacOS
+$CURSOR_THEME=MacOS-Cursor
+
+exec = gsettings set org.gnome.desktop.interface icon-theme '$ICON_THEME'
+exec = gsettings set org.gnome.desktop.interface gtk-theme '$GTK_THEME'
+exec = gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+
+# // You can use the commands below or use the HyDE CLI to set the cursor globally
+# exec = gsettings set org.gnome.desktop.interface cursor-theme '$CURSOR_THEME'
+# exec = gsettings set org.gnome.desktop.interface cursor-size 20
+# exec = hyprctl setcursor MacOS-Cursor 20
+exec = Hyde cursor theme '$CURSOR_THEME' size 30
+
+# // Set the sddm theme here
+exec = Hyde sddm set $SDDM_THEME
+
+general {
+    gaps_in = 4
+    gaps_out = 10
+    border_size = 2
+    col.active_border = rgba(2770C0FF) rgba(1E4C84FF) 45deg
+    col.inactive_border = rgba(A44185CC) rgba(012339CC) 45deg
+    layout = dwindle
+    resize_on_border = true
+}
+
+group {
+    col.border_active = rgba(2770C0FF) rgba(1E4C84FF) 45deg
+    col.border_inactive = rgba(A44185CC) rgba(012339CC) 45deg
+    col.border_locked_active = rgba(2770C0FF) rgba(1E4C84FF) 45deg
+    col.border_locked_inactive = rgba(A44185CC) rgba(012339CC) 45deg
+}
+
+
+decoration {
+    rounding = 9
+    active_opacity = 0.85
+    inactive_opacity = 0.85
+
+    shadow {
+        enabled = true
+        ignore_window = true
+        offset = 0 0
+        range = 15
+        render_power = 1
+        color = 0x80ffffff
+    }
+
+    blur {
+        enabled = yes
+        size = 4
+        passes = 4
+        new_optimizations = on
+        ignore_opacity = on
+        xray = false
+    }
+}
+
+blurls = waybar

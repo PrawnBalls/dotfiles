@@ -1,0 +1,59 @@
+$HOME/.config/kitty/theme.conf|killall -SIGUSR1 kitty
+
+# vim:ft=kitty
+
+## name:     Catppuccin Kitty Latte
+## author:   Catppuccin Org
+## license:  MIT
+## upstream: https://github.com/catppuccin/kitty/blob/main/themes/latte.conf
+## blurb:    Soothing pastel theme for the high-spirited!
+
+
+
+# The basic colors
+foreground              #3b3e55
+background              #eff1f5
+selection_foreground    #eff1f5
+selection_background    #dc8a78
+
+cursor                  #dc8a78
+cursor_text_color       #eff1f5
+
+url_color               #dc8a78
+
+active_border_color     #7287fd
+inactive_border_color   #9ca0b0
+bell_border_color       #df8e1d
+
+wayland_titlebar_color system
+macos_titlebar_color system
+
+active_tab_foreground   #eff1f5
+active_tab_background   #8839ef
+inactive_tab_foreground #3b3e55
+inactive_tab_background #9ca0b0
+tab_bar_background      #bcc0cc
+
+mark1_foreground #eff1f5
+mark1_background #7287fd
+mark2_foreground #eff1f5
+mark2_background #8839ef
+mark3_foreground #eff1f5
+mark3_background #209fb5
+
+color0 #5c5f77
+color8 #6c6f85
+color1 #d20f39
+color9 #d20f39
+color2  #40a02b
+color10 #40a02b
+color3  #df8e1d
+color11 #df8e1d
+color4  #1e66f5
+color12 #1e66f5
+color5  #ea76cb
+color13 #ea76cb
+color6  #179299
+color14 #179299
+color7  #9ca0b0
+color15 #bcc0cc

@@ -1,0 +1,55 @@
+$HOME/.config/kitty/theme.conf|killall -SIGUSR1 kitty
+
+font_family      SFMono Nerd Font
+background_opacity 0.97
+
+# The basic colors
+foreground #fafafa
+background #1c1c1c
+selection_foreground    #3E3E3E
+selection_background    #C1DDFF
+
+# Cursor colors
+cursor                  #C7C7C7
+cursor_text_color       #FEFFFF
+
+# URL underline color when hovering with mouse
+url_color               #FADA16
+
+# OS Window titlebar colors
+wayland_titlebar_color system
+macos_titlebar_color system
+
+# Tab bar colors
+active_tab_foreground   #FADA16
+active_tab_background   #1F2326
+inactive_tab_foreground #1F2326
+inactive_tab_background #FADA16
+tab_bar_background      #1F2326
+
+# Colors for marks (marked text in the terminal)
+mark1_foreground #1467e3
+mark1_background #1F2326
+mark2_foreground #1467e3
+mark2_background #1F2326
+mark3_foreground #1467e3
+mark3_background #1F2326
+
+# The 16 terminal colors
+
+color0  #4a4a4a
+color1  #f07178
+color2  #c3e88d
+color3  #ffcb6b
+color4  #82aaff
+color5  #c792ea
+color6  #89ddff
+color7  #eeffff
+color8  #4a4a4a
+color9  #f07178
+color10 #c3e88d
+color11 #ffcb6b
+color12 #82aaff
+color13 #c792ea
+color14 #89ddff
+color15 #fafafa
