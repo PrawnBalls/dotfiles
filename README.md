@@ -4,8 +4,6 @@
 
 ![Hyprland](screenshots/Desktop.png)
 
-## Screenshots
-
 ### Cava & Music Player
 
 ![Hyprland](screenshots/Cava-and-rmpc-Music-Player.png)
