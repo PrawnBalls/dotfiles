@@ -8,6 +8,27 @@
 
 ![Hyprland](screenshots/Cava-and-rmpc-Music-Player.png)
 
+### Kitty Terminal/Fastfetch
+
+![Hyprland](screenshots/Kitty-Terminal.png)
+
+### Lockscreen
+
+![Hyprland](screenshots/Lockscreen.png)
+
+### Logout, Shutdown, Reboot and lock
+
+![Hyprland](screenshots/Logout-shutdown-Options.png)
+
+### Theme Changer
+
+![Hyprland](screenshots/Theme-Select.png)
+
+### Wallpaper Changer
+
+![Hyprland](screenshots/Wallpaper-Select.png)
+
+
 # Dotfiles
 
 This repository contains my personal configuration files for various tools and environments, including:
