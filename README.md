@@ -28,6 +28,11 @@
 
 ![Hyprland](screenshots/Wallpaper-Select.png)
 
+### Neovim/Lazyvim
+
+![Hyprland](screenshots/Lazyvim.png)
+![Hyprland](screenshots/Lazyvim2.png)
+
 
 # Dotfiles
 
