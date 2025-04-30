@@ -3,7 +3,12 @@
 ### Hyprland Desktop
 
 ![Hyprland](screenshots/Desktop.png)
-![Hyprland](screenshots/Desktop.png)
+
+## Screenshots
+
+### Cava & Music Player
+
+![Hyprland](screenshots/Cava-and-rmpc-Music-Player.png)
 
 # Dotfiles
 
